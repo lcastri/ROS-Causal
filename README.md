@@ -1,4 +1,7 @@
 # Experimental Evaluation of ROS-Causal in Real-World Human-Robot Spatial Interaction Scenarios
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10844902.svg)](https://doi.org/10.5281/zenodo.10844902)
+
 This repository contains the scripts for processing and visualising our dataset named "Human-Robot Spatial Interaction Dataset for Causal Analysis from Mobile Platforms".
 The dataset captures a Human-Robot Spatial Interaction (HRSI) scenario between a person and the TIAGo robot. It includes: 
 * rosbags containing: Velodyne LiDAR point clound, robot and human state (position, orientation and velocities);
