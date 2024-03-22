@@ -2,8 +2,9 @@
 
   <arg name="bagname"/>
   <arg name="only_visual" default="true"/>
-  <arg name="peopleID" default="$(find hrisim_postprocessing)/info/peopleID.json"/>
-  <arg name="goals" default="$(find hrisim_postprocessing)/info/goals.json"/>
+  <arg name="peopleID" default="$(find bag_processing_bringup)/info/peopleID.json"/>
+  <arg name="goals" default="$(find bag_processing_bringup)/info/goals.json"/>
+  <arg name="csvpath" default="$(find bag_processing_bringup)/data"/>
 
 
   <!-- Robot model -->
@@ -27,13 +28,13 @@
   <!-- Show human goal -->
   <node pkg="rviz_visualisation" type="goal_dot_visualiser.py" name="goal_dot_visualiser" args="$(find bag_processing_bringup)/data/$(arg bagname)_goal.csv" output="screen">
   </node>
-  <node pkg="rviz_visualisation" type="goal_id_visualiser.py" name="goal_id_visualiser" args="$(arg bagname) $(arg goals) $(arg peopleID)" output="screen">
+  <node pkg="rviz_visualisation" type="goal_id_visualiser.py" name="goal_id_visualiser" args="$(arg bagname) $(arg peopleID) $(arg goals)" output="screen">
   </node>
 
   <group unless="$(arg only_visual)">
 
     <!-- Extracting selected human -->
-    <node pkg="hrisim_postprocessing" type="extract_Agent.py" name="extract_agent" args="$(arg bagname) $(arg peopleID)" output="screen">
+    <node pkg="bag_processing_bringup" type="extract_Agent.py" name="extract_agent" args="$(arg bagname) $(arg peopleID) $(arg csvpath)" output="screen">
     </node>
 
     <!-- ROS-Causal human -->
@@ -56,9 +57,15 @@
 
     <!-- ROS-Causal data -->
     <include file="$(find roscausal_data)/launch/data_collection.launch">
+      <arg name="data_dir" value="$(find bag_processing_bringup)/traj/"/>
+      <arg name="pp_data_dir" value = "$(find bag_processing_bringup)/pptraj/"/>
+      <arg name="pp_script_dir" value = "$(find roscausal_data)/pp_scripts/"/>
+      <arg name="pp_script" value = "postprocess.py"/>
       <arg name="dt" value="0.1"/> 
       <arg name="subsampling" value="True"/> 
-      <arg name="data_dir" value="$(find bag_processing_bringup)/data/"/>
+      <arg name="delete_traj" value="False"/>
+      <!-- <arg name="ts_length"   value="60"/>  -->
+
     </include>
 
   </group>

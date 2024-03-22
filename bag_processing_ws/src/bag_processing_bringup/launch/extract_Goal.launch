@@ -1,8 +1,9 @@
 <launch>
 
   <arg name="bagname"/>
-  <arg name="peopleID" default="$(find hrisim_postprocessing)/info/peopleID.json"/>
-  <arg name="goals" default="$(find hrisim_postprocessing)/info/goals.json"/>
+  <arg name="peopleID" default="$(find bag_processing_bringup)/info/peopleID.json"/>
+  <arg name="goals" default="$(find bag_processing_bringup)/info/goals.json"/>
+  <arg name="csvpath" default="$(find bag_processing_bringup)/data"/>
 
   <!-- Robot model -->
   <include file="$(find tiago_description)/robots/upload.launch">
@@ -23,11 +24,11 @@
         required="true"/>
 
   <!-- Show goals -->
-  <node pkg="rviz_visualisation" type="goal_id_visualiser.py" name="goal_id_visualiser" args="$(arg bagname) $(arg goals) $(arg peopleID)" output="screen">
+  <node pkg="rviz_visualisation" type="goal_id_visualiser.py" name="goal_id_visualiser" args="$(arg bagname) $(arg peopleID) $(arg goals)" output="screen">
   </node>
 
   <!-- Extracting selected human goal -->
-  <node pkg="hrisim_postprocessing" type="extract_Goal.py" name="extract_goal"  args="$(arg bagname) $(arg peopleID) $(arg goals)" output="screen">
+  <node pkg="bag_processing_bringup" type="extract_Goal.py" name="extract_goal"  args="$(arg bagname) $(arg peopleID) $(arg goals) $(arg csvpath)" output="screen">
   </node>
 
   <!-- rviz -->

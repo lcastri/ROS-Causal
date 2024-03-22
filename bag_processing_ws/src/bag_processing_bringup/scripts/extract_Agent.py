@@ -23,7 +23,7 @@ MAP_BOUNDARIES = [(5.45, -4.66), (0.75, -0.56), (0.47, -0.73), (-0.73, 0.28),
 MAP = Polygon(MAP_BOUNDARIES)       
 GOAL_PARAM = "/hri/goal"
 
-class DataHandler():
+class AgentExtracter():
     """
     Class handling data
     """
@@ -40,12 +40,11 @@ class DataHandler():
             peopleID = json.load(json_file)
             self.A_ID = peopleID[AGENT]
         
-        original_path = "~/git/ROS-Causal_HRISim/utilities_ws/src/bag_postprocess_bringup/data"
-        csv_path = os.path.expanduser(original_path) + '/' + AGENT + "_goal.csv"
+        csv_path = CSVPATH + '/' + AGENT + "_goal.csv"
         self.goal_csv = pd.read_csv(csv_path)
         
         # Person subscriber
-        self.sub_people = rospy.Subscriber('/people_tracker/people', People, self.cb_handle_data)
+        rospy.Subscriber('/people_tracker/people', People, self.cb_handle_data)
         self.pub_selh = rospy.Publisher('/hri/sel_human', TrackedPersons, queue_size=10)
         
         
@@ -139,6 +138,7 @@ class DataHandler():
 if __name__ == '__main__':       
     AGENT = sys.argv[1]
     PEOPLE_ID = sys.argv[2]
+    CSVPATH = sys.argv[3]
 
     # Init node
     rospy.init_node(NODE_NAME)
@@ -146,6 +146,6 @@ if __name__ == '__main__':
     # Set node rate
     rate = rospy.Rate(NODE_RATE)
    
-    data_handler = DataHandler()
+    data_handler = AgentExtracter()
         
     rospy.spin()

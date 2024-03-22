@@ -19,7 +19,7 @@ MAP_BOUNDARIES = [(5.45, -4.66), (0.75, -0.56), (0.47, -0.73), (-0.73, 0.28),
                   (2.01, 2.82), (2.95, 1.82), (3.52, 1.4), (4.16, 1.17), (7.86, -1.85)]
 MAP = Polygon(MAP_BOUNDARIES)       
 
-class DataHandler():
+class GoalExtracter():
     """
     Class handling data
     """
@@ -101,6 +101,7 @@ if __name__ == '__main__':
     PEOPLE_ID = sys.argv[2]
     with open(sys.argv[3]) as json_file:
         GOALS = json.load(json_file)
+    CSVPATH = sys.argv[4]
     
     # Init node
     rospy.init_node(NODE_NAME)
@@ -108,13 +109,13 @@ if __name__ == '__main__':
     # Set node rate
     rate = rospy.Rate(NODE_RATE)
    
-    data_handler = DataHandler()
+    data_handler = GoalExtracter()
         
     def cleanup():
-        original_path = "~/git/ROS-Causal_HRISim/utilities_ws/src/bag_postprocess_bringup/data"
-        csv_path = os.path.expanduser(original_path)
+        # original_path = "~/git/ROS-Causal_HRISim/utilities_ws/src/bag_postprocess_bringup/data"
+        # csv_path = os.path.expanduser(original_path)
         data_handler.raw.bfill(inplace=True)
-        data_handler.raw.to_csv(csv_path + '/' + AGENT + "_goal.csv", sep=',', index=False)
+        data_handler.raw.to_csv(CSVPATH + '/' + AGENT + "_goal.csv", sep=',', index=False)
 
     rospy.on_shutdown(cleanup)
 

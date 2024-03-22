@@ -137,11 +137,11 @@ if __name__ == '__main__':
     AGENT = sys.argv[1]
 
     with open(sys.argv[2]) as json_file:
-        GOALS = json.load(json_file)
-        
-    with open(sys.argv[3]) as json_file:
         peopleID = json.load(json_file)
         PERSON_ID = peopleID[AGENT]
+        
+    with open(sys.argv[3]) as json_file:
+        GOALS = json.load(json_file)
 
     # Initialize ROS node
     rospy.init_node('goal_id_visualiser', anonymous=True)
