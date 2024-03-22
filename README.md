@@ -10,7 +10,7 @@
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A4.gif" width="32%" height="32%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A5.gif" width="32%" height="32%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A6.gif" width="32%" height="32%" />
-    <br>
+    <!-- <br>
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A7.gif" width="32%" height="32%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A8.gif" width="32%" height="32%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A9.gif" width="32%" height="32%" />
@@ -21,7 +21,7 @@
     <br>
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A13.gif" width="32%" height="32%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A14.gif" width="32%" height="32%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A15.gif" width="32%" height="32%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A15.gif" width="32%" height="32%" /> -->
 </p>
 
 This repository contains the scripts for processing and visualising our dataset named "Human-Robot Spatial Interaction Dataset for Causal Analysis from Mobile Platforms".
