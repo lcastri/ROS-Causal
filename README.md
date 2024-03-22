@@ -3,23 +3,23 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10844902.svg)](https://doi.org/10.5281/zenodo.10844902)
 
 <p float="left">
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A1.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A2.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A3.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A4.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A5.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A1.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A2.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A3.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A4.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A5.gif" width="19.8%" height="19.8%" />
     <br>
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A6.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A7.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A8.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A9.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A10.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A6.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A7.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A8.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A9.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A10.gif" width="19.8%" height="19.8%" />
     <br>
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A11.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A12.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A13.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A14.gif" width="19.8%" height="19.8%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/main/images/A15.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A11.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A12.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A13.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A14.gif" width="19.8%" height="19.8%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A15.gif" width="19.8%" height="19.8%" />
 </p>
 
 This repository contains the scripts for processing and visualising our dataset named "Human-Robot Spatial Interaction Dataset for Causal Analysis from Mobile Platforms".
