@@ -1,0 +1,3 @@
+[submodule "bag_processing_ws/src/roscausal"]
+	path = bag_processing_ws/src/roscausal
+	url = https://github.com/lcastri/roscausal.git
