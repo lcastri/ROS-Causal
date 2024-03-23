@@ -56,6 +56,7 @@ roslaunch bag_processing_bringup extract_Agent.launch bagname:=A1 only_visual:=F
 > [!NOTE]
 > Replace **A1** with the corresponding rosbag identifier for the participant, which could be any value between **A1** and **A15**. Ensure that the chosen rosbag is placed inside the **bags** folder of the **bag_processing_bringup** ROS node.
 
+> [!NOTE]
 > the **only_visual** flag determines whether to generate the CSV file containing the trajectories. If set to True, the CSV is not generated.
 
 This process will generate a CSV file in the **traj** folder of the **bag_processing_bringup** ROS node and the post-processed CSV file in the **pptraj** folder of the same node. The post-processing script is located within the roscausal framework, specifically in /roscausal/roscausal_data/pp_scripts. It calculates the velocity of the participant (**v**), his/her distance to the goal (**$d_g$**) and the risk of collision with the robot (**r**) from the trajectories.
