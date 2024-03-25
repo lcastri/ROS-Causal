@@ -12,8 +12,8 @@ AGENT = 'A1'
 TRAJ_CSV = os.getcwd() + '/trajectory_plot/trajectories/' + AGENT + '_traj.csv'
 SEL_ID = '1000_' # NOTE: set '' if not needed
 GOALS_PATH = os.getcwd() + '/trajectory_plot/goals.json'
-HUMAN_COLOR = 'tab:orange'
-ROBOT_COLOR = 'tab:blue'
+HUMAN_COLOR = 'tab:blue'
+ROBOT_COLOR = 'tab:orange'
 
 with open(GOALS_PATH, 'r') as json_file:
     GOALS = json.load(json_file)
@@ -38,8 +38,8 @@ plt.imshow(map_image, extent=(origin_x, origin_x + len(map_image[0]) * resolutio
 trajectory_data = pd.read_csv(TRAJ_CSV)
 
 # Step 4: Plot Trajectories
-plt.plot(trajectory_data['r_x'].values, trajectory_data['r_y'].values, color=ROBOT_COLOR, label=f'Robot')
-plt.plot(trajectory_data['h_' + SEL_ID + 'x'].values, trajectory_data['h_' + SEL_ID + 'y'].values, color=HUMAN_COLOR, label=f'Human')
+plt.plot(trajectory_data['r_x'].values, trajectory_data['r_y'].values, color=ROBOT_COLOR, label=f'TIAGo', zorder=3)
+plt.plot(trajectory_data['h_' + SEL_ID + 'x'].values, trajectory_data['h_' + SEL_ID + 'y'].values, color=HUMAN_COLOR, label=AGENT)
 
 # Step 5: Plot goals
 for gid, g in GOALS.items():

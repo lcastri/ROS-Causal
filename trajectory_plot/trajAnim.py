@@ -38,7 +38,7 @@ origin_x, origin_y = map_info['origin'][:2]
 # Plot the map image
 fig, ax = plt.subplots()
 ax.imshow(map_image, extent=(origin_x, origin_x + len(map_image[0]) * resolution, 
-                               origin_y, origin_y + len(map_image) * resolution),
+                             origin_y, origin_y + len(map_image) * resolution),
            cmap='gray')
 
 # Load trajectory data
