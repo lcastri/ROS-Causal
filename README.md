@@ -3,12 +3,12 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10844902.svg)](https://doi.org/10.5281/zenodo.10844902)
 
 <p float="left">
-    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A1.gif" width="32%" height="32%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A2.gif" width="32%" height="32%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A3.gif" width="32%" height="32%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A1.gif" width="20%" height="20%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A2.gif" width="20%" height="20%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A3.gif" width="20%" height="20%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A4.gif" width="20%" height="20%" />
+    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A5.gif" width="20%" height="20%" />
     <br>
-    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A4.gif" width="32%" height="32%" />
-    <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A5.gif" width="32%" height="32%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A6.gif" width="32%" height="32%" />
     <!-- <br>
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A7.gif" width="32%" height="32%" />
