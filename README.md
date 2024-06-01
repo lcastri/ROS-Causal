@@ -33,6 +33,18 @@ The dataset captures a Human-Robot Spatial Interaction (HRSI) scenario between a
 
 The dataset is available on Zenodo at this [link](https://zenodo.org/records/10844902)
 
+## Citation
+
+If you found this useful for your work, please cite this papers:
+```
+@inproceedings{castri2024ros,
+  title={ROS-Causal: A ROS-based Causal Analysis Framework for Human-Robot Interaction Applications},
+  author={Castri, Luca and Beraldo, Gloria and Mghames, Sariah and Hanheide, Marc and Bellotto, Nicola},
+  booktitle={Workshop on Causal Learning for Human-Robot Interaction (Causal-HRI), ACM/IEEE International Conference on Human-Robot Interaction (HRI)},
+  year={2024}
+}
+```
+
 ## 1 - RosBag Processing
 The rosbags, contained in the **RosBags** folder of the [dataset](https://zenodo.org/records/10844902), have been processed to extract the trajectories of both the agent and the TIAGo robot for each of the 15 experiments. The processing pipeline involves two main steps:
 1. Extracting the goal position of the participant for each timestep
