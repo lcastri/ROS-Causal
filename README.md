@@ -1,4 +1,4 @@
-# Experimental Evaluation of ROS-Causal in Real-World Human-Robot Spatial Interaction Scenarios
+# Causal HRSI Dataset: Human-Robot Spatial Interaction Dataset for Causal Analysis from Mobile Platforms
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10844902.svg)](https://doi.org/10.5281/zenodo.10844902)
 
