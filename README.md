@@ -2,6 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10844902.svg)](https://doi.org/10.5281/zenodo.10844902)
 
+<div align="center">
 <p float="left">
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A1.gif" width="19%" height="19%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A2.gif" width="19%" height="19%" />
@@ -21,6 +22,7 @@
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A14.gif" width="19%" height="19%" />
     <img src="https://github.com/lcastri/ROS-Causal/blob/master/images/A15.gif" width="19%" height="19%" />
 </p>
+</div>
 
 This repository contains the scripts for processing and visualising our dataset named "Human-Robot Spatial Interaction Dataset for Causal Analysis from Mobile Platforms".
 
