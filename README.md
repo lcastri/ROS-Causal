@@ -83,9 +83,10 @@ The CSV files containing the trajectories, which have already been processed, ar
 
 For both scripts to function properly, it's necessary to place the CSV file containing the trajectories in the path **/trajectory_plot/trajectories**. Below is an example:
 
+<div align="center">
 
 trajPlot of A1      |  trajAnim of A1 
 :-------------------------:|:-------------------------:
 ![](https://github.com/lcastri/ROS-Causal/blob/master/images/A1_trajplot.png)  |  ![](https://github.com/lcastri/ROS-Causal/blob/master/images/A1.gif) 
-
+</div>
 
